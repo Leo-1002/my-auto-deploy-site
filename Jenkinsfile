@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // 定义部署目录，请根据您的服务器实际情况修改
-        DEPLOY_PATH = '/var/www/html'
+        DEPLOY_PATH = '/home/www/my-auto-deploy-site'
     }
     
     stages {
