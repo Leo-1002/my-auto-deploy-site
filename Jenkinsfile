@@ -18,13 +18,13 @@ pipeline {
             steps {
                 sh """
                     # 创建部署目录（如果不存在）
-                    sudo mkdir -p ${DEPLOY_PATH}
+                    mkdir -p ${DEPLOY_PATH}
                     
                     # 复制 HTML 文件到部署目录
-                    sudo cp -f index.html ${DEPLOY_PATH}/index.html
+                    cp -f index.html ${DEPLOY_PATH}/index.html
                     
                     # 调整权限（根据需要）
-                    sudo chmod 644 ${DEPLOY_PATH}/index.html
+                    chmod 644 ${DEPLOY_PATH}/index.html
                     
                     echo '网站已成功部署到服务器'
                 """
